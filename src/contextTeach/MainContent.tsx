@@ -1,14 +1,12 @@
 import { useTheme, useUser } from "../context/AppContext";
-import UseState from "../NewTailwindFile/UseState";
 import LoginForm from "./Auth";
 import Card, { type CardProps } from "./Card";
 
 const MainContent: React.FC = () => {
   const {theme} = useTheme();
-   const { login } = useUser();
    const { user } = useUser();
   const cardData: CardProps[] = [
-    { title: 'Dashboard Stats', content: 'View your analytics and metrics here' },
+    { title: 'Dashboard Status', content: 'View your analytics and metrics here' },
     { title: 'Recent Activity', content: 'Check your latest actions and updates' },
     { title: 'Settings', content: 'Customize your experience and preferences' }
   ];
